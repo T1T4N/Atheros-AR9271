@@ -1,0 +1,274 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B51154A61A86C37D00F5FABE /* CleanAtheros.h in Headers */ = {isa = PBXBuildFile; fileRef = B51154A51A86C37D00F5FABE /* CleanAtheros.h */; };
+		B51154A81A86C37D00F5FABE /* CleanAtheros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B51154A71A86C37D00F5FABE /* CleanAtheros.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B51154A01A86C37D00F5FABE /* CleanAtheros.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanAtheros.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51154A41A86C37D00F5FABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51154A51A86C37D00F5FABE /* CleanAtheros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CleanAtheros.h; sourceTree = "<group>"; };
+		B51154A71A86C37D00F5FABE /* CleanAtheros.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CleanAtheros.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B511549C1A86C37D00F5FABE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B51154961A86C37D00F5FABE = {
+			isa = PBXGroup;
+			children = (
+				B51154A21A86C37D00F5FABE /* CleanAtheros */,
+				B51154A11A86C37D00F5FABE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B51154A11A86C37D00F5FABE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B51154A01A86C37D00F5FABE /* CleanAtheros.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B51154A21A86C37D00F5FABE /* CleanAtheros */ = {
+			isa = PBXGroup;
+			children = (
+				B51154A51A86C37D00F5FABE /* CleanAtheros.h */,
+				B51154A71A86C37D00F5FABE /* CleanAtheros.cpp */,
+				B51154A31A86C37D00F5FABE /* Supporting Files */,
+			);
+			path = CleanAtheros;
+			sourceTree = "<group>";
+		};
+		B51154A31A86C37D00F5FABE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B51154A41A86C37D00F5FABE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B511549D1A86C37D00F5FABE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51154A61A86C37D00F5FABE /* CleanAtheros.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B511549F1A86C37D00F5FABE /* CleanAtheros */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B51154AB1A86C37D00F5FABE /* Build configuration list for PBXNativeTarget "CleanAtheros" */;
+			buildPhases = (
+				B511549B1A86C37D00F5FABE /* Sources */,
+				B511549C1A86C37D00F5FABE /* Frameworks */,
+				B511549D1A86C37D00F5FABE /* Headers */,
+				B511549E1A86C37D00F5FABE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CleanAtheros;
+			productName = CleanAtheros;
+			productReference = B51154A01A86C37D00F5FABE /* CleanAtheros.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B51154971A86C37D00F5FABE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Abel Espinosa";
+				TargetAttributes = {
+					B511549F1A86C37D00F5FABE = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = B511549A1A86C37D00F5FABE /* Build configuration list for PBXProject "CleanAtheros" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B51154961A86C37D00F5FABE;
+			productRefGroup = B51154A11A86C37D00F5FABE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B511549F1A86C37D00F5FABE /* CleanAtheros */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B511549E1A86C37D00F5FABE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B511549B1A86C37D00F5FABE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B51154A81A86C37D00F5FABE /* CleanAtheros.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B51154A91A86C37D00F5FABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B51154AA1A86C37D00F5FABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B51154AC1A86C37D00F5FABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				INFOPLIST_FILE = CleanAtheros/Info.plist;
+				MODULE_NAME = com.gubawang.AR9271.CleanAtheros;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		B51154AD1A86C37D00F5FABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				INFOPLIST_FILE = CleanAtheros/Info.plist;
+				MODULE_NAME = com.gubawang.AR9271.CleanAtheros;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B511549A1A86C37D00F5FABE /* Build configuration list for PBXProject "CleanAtheros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51154A91A86C37D00F5FABE /* Debug */,
+				B51154AA1A86C37D00F5FABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B51154AB1A86C37D00F5FABE /* Build configuration list for PBXNativeTarget "CleanAtheros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B51154AC1A86C37D00F5FABE /* Debug */,
+				B51154AD1A86C37D00F5FABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B51154971A86C37D00F5FABE /* Project object */;
+}
