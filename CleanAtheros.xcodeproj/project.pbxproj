@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B51154A61A86C37D00F5FABE /* CleanAtheros.h in Headers */ = {isa = PBXBuildFile; fileRef = B51154A51A86C37D00F5FABE /* CleanAtheros.h */; };
 		B51154A81A86C37D00F5FABE /* CleanAtheros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B51154A71A86C37D00F5FABE /* CleanAtheros.cpp */; };
+		B51154BA1A86DFCB00F5FABE /* CleanAtherosUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B51154B81A86DFCB00F5FABE /* CleanAtherosUser.cpp */; };
+		B51154BB1A86DFCB00F5FABE /* CleanAtherosUser.h in Headers */ = {isa = PBXBuildFile; fileRef = B51154B91A86DFCB00F5FABE /* CleanAtherosUser.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		B51154A41A86C37D00F5FABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B51154A51A86C37D00F5FABE /* CleanAtheros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CleanAtheros.h; sourceTree = "<group>"; };
 		B51154A71A86C37D00F5FABE /* CleanAtheros.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CleanAtheros.cpp; sourceTree = "<group>"; };
+		B51154B81A86DFCB00F5FABE /* CleanAtherosUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CleanAtherosUser.cpp; sourceTree = "<group>"; };
+		B51154B91A86DFCB00F5FABE /* CleanAtherosUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CleanAtherosUser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,8 @@
 			children = (
 				B51154A51A86C37D00F5FABE /* CleanAtheros.h */,
 				B51154A71A86C37D00F5FABE /* CleanAtheros.cpp */,
+				B51154B91A86DFCB00F5FABE /* CleanAtherosUser.h */,
+				B51154B81A86DFCB00F5FABE /* CleanAtherosUser.cpp */,
 				B51154A31A86C37D00F5FABE /* Supporting Files */,
 			);
 			path = CleanAtheros;
@@ -70,6 +76,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51154BB1A86DFCB00F5FABE /* CleanAtherosUser.h in Headers */,
 				B51154A61A86C37D00F5FABE /* CleanAtheros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B51154A81A86C37D00F5FABE /* CleanAtheros.cpp in Sources */,
+				B51154BA1A86DFCB00F5FABE /* CleanAtherosUser.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,11 +233,13 @@
 		B51154AC1A86C37D00F5FABE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
 				INFOPLIST_FILE = CleanAtheros/Info.plist;
 				MODULE_NAME = com.gubawang.AR9271.CleanAtheros;
 				MODULE_VERSION = 1.0.0d1;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
 			};
@@ -238,11 +248,13 @@
 		B51154AD1A86C37D00F5FABE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0.0d1;
 				INFOPLIST_FILE = CleanAtheros/Info.plist;
 				MODULE_NAME = com.gubawang.AR9271.CleanAtheros;
 				MODULE_VERSION = 1.0.0d1;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = kext;
 			};
