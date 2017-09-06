@@ -6,7 +6,8 @@
 //  Copyright (c) 2015 Abel Espinosa. All rights reserved.
 //
 #include <IOKit/IOService.h>
-#include <IOKit/usb/IOUSBDevice.h>
+#include <IOKit/usb/IOUSBHostDevice.h>
+#include <IOKit/usb/USB.h>
 
 /*
  typedef struct {
@@ -78,13 +79,13 @@ private:
     UInt8			*fControlMap;			// Subordinate interface numbers
     UInt8			fPowerState;				// Ordinal for power management
 public:
-    IOUSBDevice		*fInterface;
-    virtual bool init(OSDictionary *dictionary = 0);
-    virtual void free(void);
-    virtual IOService *probe(IOService *provider, SInt32 *score);
-    virtual bool start(IOService *provider);
-    virtual void stop(IOService *provider);
-    virtual IOUSBInterface* FindNextInterface(IOUSBInterface* current,IOUSBFindInterfaceRequest* request);
+    IOUSBHostDevice		*fInterface;
+    virtual bool init(OSDictionary *dictionary = 0) override;
+    virtual void free(void) override;
+    virtual IOService *probe(IOService *provider, SInt32 *score) override;
+    virtual bool start(IOService *provider) override;
+    virtual void stop(IOService *provider) override;
+    
     bool 			configureDevice(void);
     bool			getFunctionalDescriptors(void);
     bool 			allocateResources(void);

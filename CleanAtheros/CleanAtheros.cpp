@@ -57,7 +57,7 @@ bool com_gubawang_AR9271_CleanAtheros::start(IOService *provider)
     else
     {
         IOLog("CleanAtheros::Starting\n");
-        fInterface = OSDynamicCast(IOUSBDevice, provider);
+        fInterface = OSDynamicCast(IOUSBHostDevice, provider);
         if(!fInterface)
         {
             IOLog("CleanAtheros::Starting - Provider Invalid\n");
@@ -103,8 +103,8 @@ bool com_gubawang_AR9271_CleanAtheros::configureDevice()
     
     IOLog("CleanAtheros::Configuring Device\n");
     
-    fInterfaceNumber = fInterface->GetDeviceClass();
-    fSubClass = fInterface->GetDeviceSubClass();
+    fInterfaceNumber = fInterface->getDeviceDescriptor()->bDeviceClass;
+    fSubClass = fInterface->getDeviceDescriptor()->bDeviceSubClass;
     IOLog("CleanAtheros::Configuring Device - Subclass and interface number\n");
     
     IOLog("CleanAtheros::Configuring Device - Comm interface number\n");
@@ -145,7 +145,8 @@ bool com_gubawang_AR9271_CleanAtheros::getFunctionalDescriptors()
     do
     {
         IOLog("CleanAtheros::No descriptors\n");
-        funcDesc = (const FunctionalDescriptorHeader *)fInterface->FindNextDescriptor((void*)funcDesc, CS_INTERFACE);
+//        funcDesc = (const FunctionalDescriptorHeader *)fInterface->FindNextDescriptor((void*)funcDesc, CS_INTERFACE);
+        funcDesc = (const FunctionalDescriptorHeader *)StandardUSB::getNextDescriptorWithType(fInterface->getConfigurationDescriptor(), (const Descriptor *)funcDesc, CS_INTERFACE);
         
         if (!funcDesc)
         {
@@ -245,53 +246,3 @@ bool com_gubawang_AR9271_CleanAtheros::initForPM(IOService *provider)
     return false;
     
 }/* end initForPM */
-
-IOUSBInterface* com_gubawang_AR9271_CleanAtheros::FindNextInterface(IOUSBInterface* current,IOUSBFindInterfaceRequest* request)
-{
-    /*
-     enum {
-     kUSBCompositeClass          	= 0,
-     kUSBCommClass               	= 2,		// Deprecated
-     kUSBCommunicationClass			= 2,
-     kUSBHubClass                	= 9,
-     kUSBDataClass               	= 10,
-     kUSBPersonalHealthcareClass		= 15,
-     kUSBDiagnosticClass				= 220,
-     kUSBWirelessControllerClass 	= 224,
-     kUSBMiscellaneousClass			= 239,
-     kUSBApplicationSpecificClass 	= 254,
-     kUSBVendorSpecificClass     	= 255
-     };
-     */
-    enum {
-        kIOUSBVendorIDAppleComputer		= 0x05AC,
-        kIOUSBVendorIDApple             = 0x05AC
-    };
-
-    
-    IOUSBFindInterfaceRequest req;
-    IOUSBInterface*           fCommInterface = NULL;
-    req.bInterfaceClass =    kUSBVendorSpecificClass;
-    req.bInterfaceSubClass = kUSBVendorSpecificClass;
-    req.bInterfaceProtocol = kUSBVendorSpecificClass;
-    req.bAlternateSetting =  kIOUSBFindInterfaceDontCare;
-    
-    //fCommInterface = fpDevice->FindNextInterface(NULL, &req);
-    if (!fCommInterface)
-    {
-        // not found
-    }
-    
-    
-    
-    return NULL;
-}
-
-
-
-
-
-
-
-
-
